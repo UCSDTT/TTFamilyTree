@@ -1,0 +1,48 @@
+{
+  "name": "Ashay Verma",
+  "class": "Charter",
+  "nickname": "The Dark Knight",
+  "pledged": 2009,
+  "graduated": 2011,
+  "littles": [
+    {
+      "name": "Frank Buchannan",
+      "class": "Alpha",
+      "nickname": "The Godfather",
+      "pledged": 2009,
+      "graduated": 2012,
+      "littles": [
+        {
+          "name": "Taya Chiang",
+          "class": "Gamma",
+          "nickname": "Guu",
+          "pledged": 2010,
+          "graduated": 2014
+        },
+        {
+          "name": "Caroline Kim",
+          "class": "Gamma",
+          "nickname": "Dora",
+          "pledged": 2010,
+          "graduated": 2013
+        }
+      ]
+    },
+    {
+      "name": "Veronica Wu",
+      "class": "Alpha",
+      "nickname": "Hyphylicious",
+      "pledged": 2009,
+      "graduated": 2012,
+      "littles": [
+        {
+          "name": "Mayuko Inoue",
+          "class": "Epsilon",
+          "nickname": "Kiche?",
+          "pledged": 2011,
+          "graduated": 2014
+        }
+      ]
+    }
+  ]
+}
