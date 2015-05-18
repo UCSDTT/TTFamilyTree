@@ -17,14 +17,33 @@
           "class": "Gamma",
           "nickname": "Guu",
           "pledged": 2010,
-          "graduated": 2014
+          "graduated": 2014,
+          "littles": [
+            {
+              "name": "Benjie Genchel",
+              "class": "Eta",
+              "nickname": "Destroyer of Worlds",
+              "pledged": 2012,
+              "graduated": 2015
+
+              }
+            ]
         },
         {
           "name": "Caroline Kim",
           "class": "Gamma",
           "nickname": "Dora",
           "pledged": 2010,
-          "graduated": 2013
+          "graduated": 2013,
+          "littles": [
+            {
+              "name": "Johnny Tran",
+              "class": "Epsilon",
+              "nickname": "Ifrit",
+              "pledged": 2011,
+              "graduated": 2014
+              }
+            ]
         }
       ]
     },
@@ -40,7 +59,16 @@
           "class": "Epsilon",
           "nickname": "Kiche?",
           "pledged": 2011,
-          "graduated": 2014
+          "graduated": 2014,
+          "littles": [
+            {
+              "name": "Andy Kietiwong",
+              "class": "Eta",
+              "nickname": "Woody",
+              "pledged": 2012,
+              "graduated": "Present"
+              }
+            ]
         }
       ]
     }
