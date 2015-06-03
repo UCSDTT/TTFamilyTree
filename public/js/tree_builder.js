@@ -1,6 +1,6 @@
 var margin = {top: 100, right: 50, bottom: 100, left: 50};
 var tree_width = window.innerWidth - margin.left - margin.right;
-var tree_height = window.innerHeight - margin.top - margin.bottom;
+var tree_height = window.innerHeight - margin.top - margin.bottom + 500;
 
 var tree = d3.layout.tree()
     .separation(function(a, b) { return a.parent === b.parent ? 10 : 20; })
@@ -16,9 +16,11 @@ var canvas = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("json/example.json", function(json) {
-  var nodes = tree.nodes(json);
+d3.json('/data', function(json){
+  var Incredibles = json.Incredibles;
+  var charter = Incredibles[2];
 
+  var nodes = tree.nodes(charter);
   var link = canvas.selectAll(".link")
       .data(tree.links(nodes))
     .enter()
@@ -49,7 +51,7 @@ d3.json("json/example.json", function(json) {
       .attr("x", function(d){ return d.x; })
       .attr("y", function(d){ return d.y - 15;})
       .style("text-anchor", "middle")
-      .text(function(d) { return d.name; });
+      .text(function(d) { return d.first_name + ' ' + d.last_name; });
 
   node.append("text")
       .attr("x", function(d) { return d.x;})
@@ -70,7 +72,7 @@ d3.json("json/example.json", function(json) {
       .attr("y", function(d) { return d.y + 50})
       .style("text-anchor", "middle")
       .attr("class", "years active")
-      .text(function(d) { return d.pledged + " – " + d.graduated; });
+      .text(function(d) { return d.start_year + " – " + d.grad_year; });
 
 });
 
