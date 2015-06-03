@@ -1,5 +1,5 @@
 {
-  "name": "TTFamilyTree",
+  "name": "TTEDFamilyTree",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,9 @@
     "body-parser": "^1.12.2",
     "dotenv": "*",
     "express": "^4.12.3",
+    "pg": "*",
+    "knex": "*",
+    "async": "*",
     "jade": "^1.9.2"
   }
 }

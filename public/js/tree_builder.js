@@ -16,7 +16,7 @@ var canvas = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("json/tree.json", function(json) {
+d3.json("json/example.json", function(json) {
   var nodes = tree.nodes(json);
 
   var link = canvas.selectAll(".link")
@@ -34,7 +34,7 @@ d3.json("json/tree.json", function(json) {
       .data(nodes)
     .enter().append("g")
       .attr("class", "node")
-      //.attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+      
   node.append("rect")
       .attr("width", 240)
       .attr("height", 100)
